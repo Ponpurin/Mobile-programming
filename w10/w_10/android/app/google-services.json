@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "302031379998",
+    "project_id": "chattiely",
+    "storage_bucket": "chattiely.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302031379998:android:c7016ad414c300e0d7180f",
+        "android_client_info": {
+          "package_name": "com.example.w_10"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302031379998-kqidg65fj93sbs48hsda4b7e21a7o2ri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCj-hDnInpC8qzE1VlnHYHCOsRMqO3XWcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "302031379998-kqidg65fj93sbs48hsda4b7e21a7o2ri.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "302031379998-240os23vlf68u4i85uimsu347lnn2flf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.w10"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
