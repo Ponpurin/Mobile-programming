@@ -18,8 +18,11 @@ class _UserImagePickerState extends State<UserImagePicker> {
   ImageProvider? _image;
 
   void pickImage() async {
-    final pickImageXFile =
-        await ImagePicker().pickImage(source: ImageSource.gallery);
+    final pickImageXFile = await ImagePicker().pickImage(
+      source: ImageSource.gallery,
+      imageQuality: 50,
+      maxWidth: 200,
+    );
     if (kIsWeb) {
       _pickedImageFile =
           await DefaultCacheManager().getSingleFile(pickImageXFile!.path);
