@@ -59,7 +59,7 @@ class _MainScreenState extends State<MainScreen>
               height: animation.value * 100,
               child: const Hero(
                   tag: 'logo',
-                  child: Image(image: AssetImage('assets/images/letter.png'))),
+                  child: Image(image: AssetImage('assets/images/logo.png'))),
             ),
             Center(
               child: SizedBox(

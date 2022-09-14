@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'input_with_error_text.dart';
 
+// ignore: must_be_immutable
 class MyForm extends StatelessWidget {
   InputWithErrorText input;
   final bool hideText;

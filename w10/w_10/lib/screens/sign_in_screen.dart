@@ -38,7 +38,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       child: Hero(
                           tag: 'logo',
                           child: Image(
-                              image: AssetImage('assets/images/letter.png'))),
+                              image: AssetImage('assets/images/logo.png'))),
                     ),
                     Expanded(
                         child: Text('Sign In', style: TextStyle(fontSize: 32))),

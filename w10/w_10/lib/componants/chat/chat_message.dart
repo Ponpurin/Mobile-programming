@@ -20,7 +20,7 @@ class ChatMessage extends StatelessWidget {
           isMe ? CrossAxisAlignment.end : CrossAxisAlignment.start,
       children: [
         MessageSenderName(data: data),
-        MessageText(data: data),
+        MessageText(data: data, isMe: isMe),
         MessageTimestamp(data: data),
       ],
     );

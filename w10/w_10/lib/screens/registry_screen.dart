@@ -8,6 +8,7 @@ import 'package:w_10/componants/my_button.dart';
 import 'package:w_10/componants/my_form.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'dart:developer';
+// ignore: depend_on_referenced_packages, library_prefixes
 import 'package:path/path.dart' as pathPackage;
 
 import '../componants/input_with_error_text.dart';
@@ -47,7 +48,7 @@ class _RegistryScreenState extends State<RegistryScreen> {
                   child: Hero(
                       tag: 'logo',
                       child:
-                          Image(image: AssetImage('assets/images/letter.png'))),
+                          Image(image: AssetImage('assets/images/logo.png'))),
                 ),
                 Expanded(
                     child: Text('Create a new account',

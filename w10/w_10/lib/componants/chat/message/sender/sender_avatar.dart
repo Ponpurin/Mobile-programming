@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
@@ -18,18 +20,19 @@ class SenderAvatar extends StatelessWidget {
       builder:
           (BuildContext context, AsyncSnapshot<DocumentSnapshot> snapshot) {
         if (snapshot.hasError) {
+          log('error case');
           return const CircleAvatar(
               backgroundImage: AssetImage('assets/images/logo.png'));
         }
         if (snapshot.hasData && !snapshot.data!.exists) {
+          log('exists case');
           return const CircleAvatar(
               backgroundImage: AssetImage('assets/images/logo.png'));
         }
         if (snapshot.connectionState == ConnectionState.done) {
           Map<String, dynamic> data =
               snapshot.data!.data() as Map<String, dynamic>;
-          return CircleAvatar(
-              backgroundImage: NetworkImage(data['avatar_user']));
+          return CircleAvatar(backgroundImage: NetworkImage(data['avatarURL']));
         }
         return const SizedBox(
             width: 20, height: 20, child: CircularProgressIndicator());

@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:w_10/componants/chat/chat_message.dart';
 
+// ignore: must_be_immutable
 class ChatListView extends StatelessWidget {
   ChatListView({
     Key? key,
