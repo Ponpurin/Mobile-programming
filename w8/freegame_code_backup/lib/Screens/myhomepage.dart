@@ -2,6 +2,8 @@ import 'dart:convert';
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:freegame/api/freegame_api.dart';
+import 'package:freegame/data/freegame_data/freegame_data.dart';
 import 'package:http/http.dart' as http;
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:freegame/Screens/search_screen.dart';
@@ -14,6 +16,9 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  Future<FreegameData>? freegameData;
+  String? idNumber;
+
   List gameList = [];
   bool isLoading = false;
 
@@ -22,6 +27,8 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
 
     this.fetchGame();
+
+    //freegameData = FreeGameAPI.fetchDataByDefault();
   }
 
   fetchGame() async {

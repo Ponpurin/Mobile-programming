@@ -11,8 +11,8 @@ class FreeGameAPI {
     }
   }
 
-  static Future<FreegameData> fetchDataByDefaultID() async {
-    String url = 'https://www.freetogame.com/api/game?id=1';
+  static Future<FreegameData> fetchDataByDefault() async {
+    String url = 'https://www.freetogame.com/api/games';
     return await _fetch(url);
   }
 
