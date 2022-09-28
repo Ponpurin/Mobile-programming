@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:freegame/Screens/myhomepage.dart';
+import 'package:freegame/Screens/gamelist_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,10 +12,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(),
+      home: const GamelistScreen(),
     );
   }
 }
