@@ -24,7 +24,8 @@ class _GamelistScreenState extends State<GamelistScreen> {
   }
 
   _fetchGame() async {
-    var url = 'https://www.freetogame.com/api/games?sort-by=alphabetical';
+    // var url = 'https://www.freetogame.com/api/games?sort-by=alphabetical';
+    var url = 'https://www.freetogame.com/api/games';
     var response = await http.get(Uri.parse(url));
     if (response.statusCode == 200) {
       var items = json.decode(response.body);

@@ -76,9 +76,9 @@ flutter:
     - family: IndieFlower
       fonts:
         - asset: fonts/IndieFlower-Regular.ttf
-    - family: Kanit
-      fonts:
-        - asset: fonts/Kanit-Lighto.ttf
+    # - family: Kanit
+    #   fonts:
+    #     - asset: fonts/Kanit-Lighto.ttf
     - family: Mail
       fonts:
         - asset: fonts/Mali-Medium.ttf

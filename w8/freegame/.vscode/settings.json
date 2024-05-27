@@ -1,3 +1,4 @@
 {
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "cmake.sourceDirectory": "E:/CodeProject/Work/Mobile-programming/w8/freegame/windows/flutter"
 }
